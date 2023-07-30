@@ -1,0 +1,42 @@
+/* Right Side Box.*/
+.main_content {
+    width: 100%;
+    background-color: #FCCF31 + #F55555;
+    height: 100vh;
+}
+
+.info {
+    /* background-color: red; */
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.letsQuiz {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.testSkills {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.joinQuizBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #594f8d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.organize {
+    line-height: 30px;
+}

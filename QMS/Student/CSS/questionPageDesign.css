@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #caf0f7;
+}
+
+.container {
+    width: 100%;
+    background-color: #caf0f7;
+    min-height: 200px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.content-left {
+    width: 60%;
+    min-height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 10px;
+}
+
+.content-right {
+    width: 30%;
+    min-height: 100px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    .content-left,
+    .content-right {
+        width: 90%;
+        min-height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .content-right {
+        margin-top: 20px;
+    }
+}
+
+.question-number {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.question {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 23px;
+    padding: 10px;
+}
+
+.all-options {
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    padding: 3px;
+    list-style: none;
+    color: red;
+}
+
+.button-section {
+    padding: 10px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#prev-btn {
+    background-color: #007bff;
+}
+
+#next-btn,
+#submit-btn {
+    float: right;
+    background-color: #28a745;
+}
+
+#save-btn {
+    float: right;
+    background-color: #ffc107;
+}
+
+#prev-btn:hover {
+    background-color: #0056b3;
+}
+
+#next-btn:hover,
+#submit-btn:hover {
+    background-color: #1f9031;
+}
+
+#save-btn:hover {
+    background-color: #d39e00;
+}

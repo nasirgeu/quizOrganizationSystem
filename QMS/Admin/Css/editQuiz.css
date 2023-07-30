@@ -1,0 +1,123 @@
+/* styles.css */
+
+/* General Styles */
+.main_content {
+    width: 100%;
+    min-height: 100vh !important;
+    /* background-color: rgb(150, 158, 248); */
+}
+
+#quizForm {
+    /* background-color: red; */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container {
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    display: inline-block;
+    padding: 12px 12px 12px 0;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px 5px rgba(38, 55, 235, 0.2);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px 5px rgba(38, 55, 235, 0.2);
+}
+
+input[type="submit"] {
+    float: right;
+    padding: 12px 20px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Layout Styles */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.add-question-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rowFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowFlex .row {
+    margin-left: 3px;
+}
+
+@media (max-width: 750px) {
+    .rowFlex {
+        flex-wrap: wrap;
+    }
+
+    .rowFlex .row {
+        width: 49%;
+    }
+}
+
+/* Additional Styles */
+.rowFlex .row input[type="datetime-local"],
+.rowFlex .row input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.rowFlex .row input[type="datetime-local"]::-webkit-inner-spin-button,
+.rowFlex .row input[type="datetime-local"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.rowFlex .row input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    color: #999;
+    cursor: pointer;
+}
